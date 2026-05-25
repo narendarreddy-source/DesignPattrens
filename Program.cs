@@ -1,5 +1,6 @@
 ﻿using DesginPattrens;
 using DesginPattrens.Creational;
+using DesginPattrens.Structural;
 
 namespace Dsatest
 {
@@ -11,16 +12,11 @@ namespace Dsatest
             Console.WriteLine("Hello, World!");
 
             // Usage
-            var emp1 = new DeepEmployee
-            {
-                Id = 1,
-                Name = "John",
-                Address = new Address { City = "Dallas", Country = "USA" }
-            };
+           ISmsService smsService = new SmsAdapter();
+              smsService.Send("Hello from the Adapter pattern!");
+    
 
-            var emp2 = emp1.Clone();
-            emp2.Name = "Clone John";
-            emp2.Address.City = "Austin";
+
         }
     }
 }
