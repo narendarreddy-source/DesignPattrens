@@ -8,13 +8,18 @@ namespace Dsatest
     {
         static void Main(string[] args)
         {
-            Logger.Instance.Log("Application started");
-            Console.WriteLine("Hello, World!");
+            var stripe = new StripePaymentGateway();
+            var paypal = new PaypalPaymentGateway();
+            var razorpay = new RazorpayPaymentGateway();
 
-            // Usage
-           ISmsService smsService = new SmsAdapter();
-              smsService.Send("Hello from the Adapter pattern!");
-    
+            PaymentMethod creditcard = new CreditCardPayment(stripe);
+            creditcard.MakePayment(100);
+
+            PaymentMethod UpiPayment = new UpiPayment(paypal);
+            UpiPayment.MakePayment(200);
+
+            PaymentMethod ACHPayment = new ACHPayment(razorpay);
+            ACHPayment.MakePayment(300);
 
 
         }
