@@ -23,7 +23,7 @@ namespace Dsatest
 
             var composite = new Composite();
 
-
+            Decorator dec = new Decorator();
         }
     }
 }
