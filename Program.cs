@@ -1,4 +1,5 @@
 ﻿using DesginPattrens;
+using DesginPattrens.Behavioral;
 using DesginPattrens.Creational;
 using DesginPattrens.Structural;
 
@@ -8,8 +9,8 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-           Proxy proxy = new Proxy();
-              proxy.Run();
+          ChainOfResponsibility chainOfResponsibility = new ChainOfResponsibility();
+              chainOfResponsibility.Run();
             Console.WriteLine("Hello, World!");
         }
     }
