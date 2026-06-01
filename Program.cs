@@ -2,15 +2,15 @@
 using DesginPattrens.Creational;
 using DesginPattrens.Structural;
 
-namespace Dsatest
+namespace DesginPattrens
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-
-           Flyweight flyweight = new Flyweight();
-           
+           Proxy proxy = new Proxy();
+              proxy.Run();
+            Console.WriteLine("Hello, World!");
         }
     }
 }
