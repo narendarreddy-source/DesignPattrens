@@ -9,7 +9,7 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-          ChainOfResponsibility chainOfResponsibility = new ChainOfResponsibility();
+          Command chainOfResponsibility = new Command();
               chainOfResponsibility.Run();
             Console.WriteLine("Hello, World!");
         }
