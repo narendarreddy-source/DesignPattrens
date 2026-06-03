@@ -9,8 +9,8 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-          Command chainOfResponsibility = new Command();
-              chainOfResponsibility.Run();
+          Interpreter obj = new Interpreter();
+            obj.Run();
             Console.WriteLine("Hello, World!");
         }
     }
