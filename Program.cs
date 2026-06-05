@@ -9,7 +9,7 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-          Iterator obj = new Iterator();
+          Mediator obj = new Mediator();
             obj.Run();
             Console.WriteLine("Hello, World!");
         }
