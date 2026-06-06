@@ -9,7 +9,7 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-          Mediator obj = new Mediator();
+          Memento obj = new Memento();
             obj.Run();
             Console.WriteLine("Hello, World!");
         }
