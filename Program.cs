@@ -9,7 +9,7 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-          Memento obj = new Memento();
+            observer obj = new observer();
             obj.Run();
             Console.WriteLine("Hello, World!");
         }
