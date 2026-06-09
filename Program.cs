@@ -9,8 +9,8 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-            observer obj = new observer();
-            obj.Run();
+            Statepattren obj = new Statepattren();
+            obj.run();
             Console.WriteLine("Hello, World!");
         }
     }
