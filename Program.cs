@@ -9,7 +9,7 @@ namespace DesginPattrens
     {
         static void Main(string[] args)
         {
-            strategy obj = new strategy();
+            Template obj = new Template();
             obj.run();
             Console.WriteLine("Hello, World!");
         }
